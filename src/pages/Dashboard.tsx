@@ -1,8 +1,7 @@
-
 import { Link } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Home, Search, Cart, User, Clock, CheckCircle, TrendingUp, Package } from "lucide-react";
+import { Home, Search, ShoppingCart, User, Clock, CheckCircle, TrendingUp, Package } from "lucide-react";
 
 const Dashboard = () => {
   const metrics = [
@@ -38,7 +37,7 @@ const Dashboard = () => {
 
   const quickActions = [
     { title: "Browse Products", icon: Search, link: "/products", color: "bg-blue-500" },
-    { title: "View Cart", icon: Cart, link: "/cart", color: "bg-green-500" },
+    { title: "View Cart", icon: ShoppingCart, link: "/cart", color: "bg-green-500" },
     { title: "Customer Info", icon: User, link: "/checkout", color: "bg-purple-500" },
     { title: "Admin Panel", icon: Home, link: "/admin", color: "bg-orange-500" }
   ];
